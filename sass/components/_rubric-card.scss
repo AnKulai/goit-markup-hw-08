@@ -1,0 +1,36 @@
+.rubric-card__title {
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 50px;
+
+  @include mobile {
+    font-size: 28px;
+  }
+}
+
+.rubric-card__image {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  & > li {
+    position: relative;
+  }
+}
+
+.rubric-card__description {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}

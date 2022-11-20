@@ -1,0 +1,41 @@
+.logo {
+  @extend %d-flex;
+  margin-right: 93px;
+  @media screen and (max-width: 1200px) {
+    margin-right: calc(10px + (93 - 10) * ((100vw - 320px) / (1200 - 320)));
+  }
+  @include tablet {
+    display: flex;
+    margin-right: calc(10px + (93 - 10) * ((100vw - 320px) / (1200 - 320)));
+  }
+}
+
+.logo__partFirst {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: var(--color-hover);
+  line-height: 1.38;
+}
+
+.logo-footer {
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.logo__partSecond {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--main-color);
+  line-height: 1.38;
+}
+
+.logo-footer__second {
+  color: var(--text-color);
+}
+
+.logo-footer__spacing {
+  display: block;
+  margin-bottom: 20px;
+}

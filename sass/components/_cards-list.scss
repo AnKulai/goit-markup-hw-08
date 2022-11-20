@@ -1,0 +1,71 @@
+.cards-list {
+  display: flex;
+  gap: 30px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+  @include tablet {
+    flex-wrap: wrap;
+  }
+}
+
+.cards-list__icon {
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  &:nth-of-type(1) {
+    &::before {
+      background: url(../images/antenna\ 1.svg) center no-repeat;
+      background-color: #f5f4fa;
+    }
+  }
+  &:nth-of-type(2) {
+    &::before {
+      background: url(../images/clock\ 1.svg) center no-repeat;
+      background-color: #f5f4fa;
+    }
+  }
+  &:nth-of-type(3) {
+    &::before {
+      background: url(../images/diagram\ 1.svg) center no-repeat;
+      background-color: #f5f4fa;
+    }
+  }
+  &:nth-of-type(4) {
+    &::before {
+      background: url(../images/astronaut\ 1.svg) center no-repeat;
+      background-color: #f5f4fa;
+    }
+  }
+}
+
+.cards-list__icon::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 120px;
+  background-size: 70px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.cards-list__title {
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.cards-list__description {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--color-info);
+  margin-top: 10px;
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}

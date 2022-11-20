@@ -1,0 +1,21 @@
+.footer-location {
+  margin-bottom: 9px;
+}
+
+.footer-location__spacing {
+  color: var(--location-color);
+  line-height: 1.7;
+  &:hover,
+  &:focus {
+    color: var(--color-hover);
+  }
+}
+
+.footer-location__info {
+  color: var(--address-color);
+  line-height: 1.7;
+  &:hover,
+  &:focus {
+    color: var(--color-hover);
+  }
+}

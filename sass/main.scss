@@ -1,0 +1,29 @@
+@import 'utils/visually';
+@import 'utils/placeholders';
+@import 'utils/mixins';
+@import 'utils/container';
+@import 'utils/section';
+@import 'variables/variable';
+@import 'utils/animation';
+
+@import 'base/baseStyle';
+@import 'base/minReset';
+
+@import 'components/buttons';
+@import 'components/cards-list';
+@import 'components/contact';
+@import 'components/header';
+@import 'components/icon';
+@import 'components/logo';
+@import 'components/menu';
+@import 'components/rubric-card';
+@import 'components/social-link';
+@import 'components/teamcards';
+@import 'components/clients-card';
+@import 'components/location';
+@import 'components/join-block';
+@import 'components/popup';
+@import 'components/popup-form';
+@import 'components/navigation-block';
+@import 'components/cards-set';
+@import 'components/mobile-menu';

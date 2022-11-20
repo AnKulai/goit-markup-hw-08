@@ -1,0 +1,44 @@
+.contact {
+  @extend %d-flex;
+  margin-left: auto;
+  gap: 50px;
+  @media screen and (max-width: 1200px) {
+    gap: calc(5px + (45 - 5) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    gap: 0;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 12px;
+    
+  }
+}
+
+.contact__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--color-info);
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--color-hover);
+  }
+  & > svg {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  &:hover > svg,
+  &:focus > svg {
+    fill: var(--color-hover);
+  }
+}

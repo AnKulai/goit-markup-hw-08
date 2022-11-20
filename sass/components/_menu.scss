@@ -1,0 +1,44 @@
+.menu__link {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--color-hover);
+  }
+}
+
+.menu__link__active {
+  color: var(--color-hover);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    width: 48px;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    animation: underline 500ms linear;
+  }
+}
+
+.menu__link__secondAct {
+  color: var(--color-hover);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    width: 78px;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    animation: underline 1s;
+  }
+}

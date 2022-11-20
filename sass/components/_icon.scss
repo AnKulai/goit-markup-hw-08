@@ -1,0 +1,14 @@
+.icon {
+  transition-duration: 250ms;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #afb1b8;
+
+  &-footer {
+    fill: #fff;
+  }
+
+  
+
+  
+}

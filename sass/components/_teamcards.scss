@@ -1,0 +1,59 @@
+.teamcards {
+  @extend %d-flex;
+  text-align: center;
+  gap: 30px;
+
+  @include mobile {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @include tablet {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &-card {
+    width: calc((100% - 90px) / 4 );
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    background-color: var(--text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    @include mobile {
+      width: 100%;
+    }
+    @include tablet {
+      width: calc((100% - 30px) / 2 );
+    }
+  
+    & > img {
+      @include mobile {
+        width: 100%;
+      }
+      @include tablet {
+        width: 100%;
+      }
+    }
+    & > ul >  .social-card {
+      max-width: 44px;
+      width: calc((100% - 30px) / 4);
+    }
+  }
+  &-card__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--title-color);
+    margin-top: 30px;
+  }
+
+  &-card__jobTitle {
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--color-info);
+    margin-top: 15px;
+    margin-bottom: 16px;
+  }
+}

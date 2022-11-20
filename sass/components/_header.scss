@@ -1,0 +1,40 @@
+@import url(../utils/_dFlex.scss);
+
+.header {
+  border-bottom: 1px solid var(--border-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  @include tablet {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+  }
+
+  &-container {
+    @extend %d-flex;
+    justify-content: space-between;
+    @include tablet {
+      padding: 15px;
+    }
+  }
+
+  &-navigations {
+    @extend %d-flex;
+    margin-right: 15px;
+  }
+
+  &-menu {
+    @extend %d-flex;
+    gap: 50px;
+    @media screen and (max-width: 1200px) {
+      gap: calc(10px + (50 - 10) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      gap: 15px;
+    }
+  }
+}
