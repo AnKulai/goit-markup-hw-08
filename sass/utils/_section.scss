@@ -20,7 +20,7 @@
     margin: 0 auto;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/main.jpg) no-repeat center;
-
+    background-size: cover;
     background-color: var(--color-footer);
     max-width: 1600px;
     padding-top: 200px;
@@ -40,6 +40,7 @@
       background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero1px-mob.jpg) no-repeat center;
       padding: 125px 0;
+      background-size: cover;
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -56,6 +57,7 @@
       background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero1px-tab.jpg) no-repeat center;
       padding: 125px 0;
+      background-size: cover;
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {

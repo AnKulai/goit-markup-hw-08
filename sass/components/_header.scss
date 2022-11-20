@@ -20,7 +20,10 @@
 
   &-navigations {
     @extend %d-flex;
-    margin-right: 15px;
+    gap: 90px;
+    @include tablet {
+      gap: 88px;
+    }
   }
 
   &-menu {
