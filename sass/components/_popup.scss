@@ -32,7 +32,11 @@
     margin: auto;
 
     @include mobile {
-      width: calc((100% - 30px));
+      width: 405px;
+      height: 609px;
+    }
+    @include tablet {
+      width: 405px;
       height: 609px;
     }
   }

@@ -29,15 +29,12 @@
   &-menu {
     @extend %d-flex;
     gap: 50px;
-    @media screen and (max-width: 1200px) {
-      gap: calc(10px + (50 - 10) * ((100vw - 320px) / (1200 - 320)));
-    }
 
     @include mobile {
       display: none;
     }
     @include tablet {
-      gap: 15px;
+      gap: 56px;
     }
   }
 }

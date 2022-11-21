@@ -23,7 +23,7 @@
         <ul class="menu header-menu">
           <li><a class="menu__link" href="index.html">Студія</a></li>
           <li><a class="menu__link menu__link__secondAct" href="portfolio.html"> Портфоліо</a></li>
-          <li><a class="menu__link" href="/contact">Контакти</a></li>
+          <li><a class="menu__link" href="#">Контакти</a></li>
         </ul>
       </nav>
       <ul class="contact">
@@ -41,6 +41,40 @@
             +380961111111</a>
         </li>
       </ul>
+      <button class="mobile-menu__btn-open">
+        <svg width="24" height="16" data-menu-open>
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="mobile-menu__content">
+          <button class="mobile-menu__btn-close">
+            <svg width="40" height="40" data-menu-close>
+              <use href="./images/symbol-defs.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu-top">
+            <ul class="">
+              <li><a class="mobile-menu__link" href="/studio">Студія</a></li>
+              <li><a class="mobile-menu__link" href="portfolio.html"> Портфоліо</a></li>
+              <li><a class="mobile-menu__link" href="/contact">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="mobile-menu-bottom">
+            <ul>
+              <li><a class="mobile-menu__info-phone" href="#">+380961111111</a></li>
+              <li><a class="mobile-menu__info" href="#">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-menu__social">
+              <li> <a class="mobile-menu-social-link" href="">Instagram</a> </li>
+              <li> <a class="mobile-menu-social-link" href="">Twitter</a></li>
+              <li> <a class="mobile-menu-social-link" href="">Facebook</a> </li>
+              <li> <a class="mobile-menu-social-link" href="">LinkedIn</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -197,60 +231,62 @@
   </main>
   <footer>
     <div class="container">
-      <div class="logo-footer">
-        <a class="logo-footer__spacing " href="logo">
-          <span class="logo__partFirst">Web</span><span class="logo__partSecond logo-footer__second">Studio</span></a>
-        <address>
-          <ul>
-            <li class="footer-location">
-              <a class="footer-location__spacing" href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl"
-                target="_blank" rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a>
+      <div class="join-block__wrapper-top">
+        <div class="logo-footer">
+          <a class="logo-footer__spacing " href="logo">
+            <span class="logo__partFirst">Web</span><span class="logo__partSecond logo-footer__second">Studio</span></a>
+          <address>
+            <ul>
+              <li class="footer-location">
+                <a class="footer-location__spacing" href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl"
+                  target="_blank" rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="footer-location">
+                <a class="footer-location__info" href="malito:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="footer-location__info" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-block">
+          <h2>ПРИЄДНУЙТЕСЬ</h2>
+          <ul class="social-link social-link-footer">
+            <li class="social-card">
+              <a href="#" class="social-card__team">
+                <svg class="icon icon-footer" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-location">
-              <a class="footer-location__info" href="malito:info@devstudio.com">info@devstudio.com</a>
+            <li class="social-card">
+              <a href="#" class="social-card__team">
+                <svg class="icon icon-footer" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a class="footer-location__info" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="social-card">
+              <a href="#" class="social-card__team">
+                <svg class="icon icon-footer" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-card">
+              <a href="#" class="social-card__team">
+                <svg class="icon icon-footer" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="join-block">
-        <h2>ПРИЄДНУЙТЕСЬ</h2>
-        <ul class="social-link social-link-footer">
-          <li class="social-icon">
-            <a href="#" class="social-card__team">
-              <svg class="icon icon-footer" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icon">
-            <a href="#" class="social-card__team">
-              <svg class="icon icon-footer" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icon">
-            <a href="#" class="social-card__team">
-              <svg class="icon icon-footer" width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-icon">
-            <a href="#" class="social-card__team">
-              <svg class="icon icon-footer" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
       <div class="join-block-wrapper">
         <p class="join-block__title">Підпишіться на розсилку</p>
-        <form>
+        <form class="join-block__form">
           <input type="text" name="join" class="join-block__input " placeholder="Email" />
           <button type="button" class="join-block__btn">
             <span class="join-block__subscribe"> Підписатися</span>
@@ -259,6 +295,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

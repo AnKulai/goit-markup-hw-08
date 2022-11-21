@@ -30,6 +30,9 @@
   @include mobile {
     width: 100%;
   }
+  @include tablet {
+    width: 100%;
+  }
 
   &:focus {
     border-color: #2196f3;
@@ -64,6 +67,9 @@
   transition-property: width, height, padding;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @include mobile {
+    width: 100%;
+  }
+  @include tablet {
     width: 100%;
   }
 
@@ -115,6 +121,11 @@
   @include mobile {
     font-size: 12px;
   }
+  @include tablet {
+    font-size: 12px;
+    line-height: calc(14/12);
+
+  }
 
   &::before {
     content: "";
@@ -123,7 +134,7 @@
     height: 15px;
     border: 1px solid #212121;
     float: left;
-    margin-right: 8.38px;
+    margin-right: 8px;
     border-radius: 2px;
     transition-duration: 250ms;
     transition-property: width, height, padding;

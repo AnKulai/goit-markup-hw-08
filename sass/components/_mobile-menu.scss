@@ -2,9 +2,11 @@
   width: 100%;
   height: 100%;
   position: fixed;
+  z-index: 1;
   background-color: #fff;
   top: 0;
   left: 0;
+  overflow: scroll;
   > .mobile-menu__content {
     height: 100%;
     display: flex;
@@ -13,6 +15,13 @@
   }
   &-top {
     > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+  &-bottom {
+    & > :first-child {
       display: flex;
       flex-direction: column;
       gap: 32px;
@@ -41,16 +50,25 @@
   letter-spacing: 0.02em;
   color: #757575;
 
+  &-phone {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: calc(40px / 34px);
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+
   &:hover,
   &:focus {
     color: var(--color-hover);
   }
 }
 .mobile-menu__social {
-  // display: flex;
+  width: 332px;
   gap: 20px;
   margin-top: 64px;
   display: grid;
+  
   grid-template-columns: repeat(4, 1fr);
   @media screen and (max-width: 450px) {
     grid-template-columns: repeat(2, 1fr);
