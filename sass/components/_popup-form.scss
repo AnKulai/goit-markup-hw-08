@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
+  
   &-wrapper {
     display: flex;
     flex-direction: column;
+    
     &:nth-of-type(4) {
       margin-bottom: 20px;
     }
@@ -114,6 +115,9 @@
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
+   @media screen and (max-width: 430px) {
+      width: 85%;
+    }
 }
 
 .popup-content__policyLbl {

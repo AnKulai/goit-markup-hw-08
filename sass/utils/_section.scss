@@ -3,7 +3,11 @@
   padding-bottom: 94px;
   @include mobile {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px; 
   }
   &-rubric {
     padding-top: 0;

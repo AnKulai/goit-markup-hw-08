@@ -8,6 +8,7 @@
   visibility: visible;
   transition-duration: 1s;
   transition-property: opacity, visibility;
+  
 
   &:not(.is-hidden) {
     animation: popAnimate 850ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -18,6 +19,7 @@
   }
 
   &-body {
+    
     width: 528px;
     height: 581px;
     background-color: #fff;
@@ -30,6 +32,7 @@
     right: 0;
     left: 0;
     margin: auto;
+    overflow: scroll;
 
     @include mobile {
       width: 405px;
@@ -39,12 +42,18 @@
       width: 405px;
       height: 609px;
     }
+    @media screen and (max-width: 430px) {
+      width: 85%;
+    }
   }
   &-content {
     width: 100%;
     height: 100%;
     position: relative;
     padding: 40px;
+     @media screen and (max-width: 430px) {
+      padding: 20px;
+    }
   }
 }
 
@@ -64,6 +73,7 @@
   &:hover {
     fill: var(--color-hover);
   }
+ 
 }
 
 .popup-content__icon {

@@ -48,7 +48,13 @@
 @media screen and (max-width: 768px) {
   .section {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .section-rubric {
@@ -354,11 +360,6 @@ ul {
   color: var(--color-info);
   margin-top: 10px;
 }
-@media screen and (max-width: 768px) {
-  .cards-list__description {
-    margin-bottom: 30px;
-  }
-}
 
 .contact {
   margin-left: auto;
@@ -410,6 +411,11 @@ ul {
   border-bottom: 1px solid var(--border-color);
   padding-top: 24px;
   padding-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 16px 0;
+  }
 }
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .header {
@@ -838,6 +844,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .join-block__wrapper {
+    width: 100%;
     margin-left: 0;
     text-align: center;
   }
@@ -890,7 +897,7 @@ ul {
 }
 @media screen and (max-width: 768px) {
   .join-block__input {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 768px) {
@@ -994,6 +1001,7 @@ ul {
   right: 0;
   left: 0;
   margin: auto;
+  overflow: scroll;
 }
 @media screen and (max-width: 768px) {
   .popup-body {
@@ -1007,11 +1015,21 @@ ul {
     height: 609px;
   }
 }
+@media screen and (max-width: 430px) {
+  .popup-body {
+    width: 85%;
+  }
+}
 .popup-content {
   width: 100%;
   height: 100%;
   position: relative;
   padding: 40px;
+}
+@media screen and (max-width: 430px) {
+  .popup-content {
+    padding: 20px;
+  }
 }
 
 .popup-content__closeBtn {
@@ -1172,6 +1190,11 @@ ul {
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
+}
+@media screen and (max-width: 430px) {
+  .popup-form__button {
+    width: 85%;
+  }
 }
 
 .popup-content__policyLbl {
@@ -1335,6 +1358,11 @@ ul {
   left: 0;
   overflow: scroll;
 }
+@media screen and (max-width: 430px) {
+  .mobile-menu {
+    width: 100%;
+  }
+}
 .mobile-menu > .mobile-menu__content {
   height: 100%;
   display: flex;
@@ -1355,6 +1383,11 @@ ul {
 .mobile-menu__content {
   padding: 48px 40px;
 }
+@media screen and (max-width: 430px) {
+  .mobile-menu__content {
+    padding: calc(5px + 35 * (110vw - 100px) / 1100);
+  }
+}
 
 .mobile-menu__link {
   font-weight: 500;
@@ -1374,12 +1407,22 @@ ul {
   letter-spacing: 0.02em;
   color: #757575;
 }
+@media screen and (max-width: 430px) {
+  .mobile-menu__info {
+    font-size: calc(15px + 9 * (110vw - 100px) / 1100);
+  }
+}
 .mobile-menu__info-phone {
   font-size: 34px;
   font-weight: 500;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (max-width: 430px) {
+  .mobile-menu__info-phone {
+    font-size: calc(20px + 14 * (110vw - 100px) / 1100);
+  }
 }
 .mobile-menu__info:hover, .mobile-menu__info:focus {
   color: var(--color-hover);
@@ -1395,6 +1438,11 @@ ul {
 @media screen and (max-width: 450px) {
   .mobile-menu__social {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 430px) {
+  .mobile-menu__social {
+    width: 100%;
   }
 }
 .mobile-menu__social :nth-child(1):not(:last-child),

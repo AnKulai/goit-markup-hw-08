@@ -54,6 +54,7 @@
 .join-block__wrapper {
   margin-left: auto;
   @include mobile {
+    width: 100%;
     margin-left: 0;
     text-align: center;
   }
@@ -99,7 +100,7 @@
     width: auto;
   }
   @include mobile {
-   width: 450px;
+   width: 100%;
   }
   @include tablet {
     width: 450px;
